@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.healthcalc.CalcScreen1"
+    android:orientation="vertical"
+    >
+
+    <!--TextView for age -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/age"
+        android:id="@+id/tv_calc_screen1_age"
+        />
+
+    <!--EditText for years -->
+    <EditText
+        android:id="@+id/et_calc_screen1_years"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/years"
+        android:inputType="number"
+        android:maxLines="1" />
+
+
+    <!--TextView for sex -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sex"
+        android:id="@+id/tv_calc_screen1_sex"
+        android:layout_marginTop="10dp"
+        />
+    <!--TabLayout to choose sex -->
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tl_calc_screen1_male_female"
+        >
+        <!--TabItem for male-->
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:id="@+id/ti_calc_screen1_male"
+            />
+        <!--TabItem for female-->
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:id="@+id/ti_calc_screen1_female"
+            />
+
+    </android.support.design.widget.TabLayout>
+
+    <!--TextView for height-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/height"
+        android:id="@+id/tv_calc_screen1_height"
+        android:layout_marginTop="10dp"
+        />
+
+    <!--TabLayout to choose meters or feet-->
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tl_calc_screen1_meters_feet"
+        >
+
+        <!--TabItem for meters-->
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meters"
+            android:id="@+id/ti_calc_screen1_meters"
+            android:tag="ti_calc_screen1_meters"
+            />
+        <!--TabItem for feet-->
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feet"
+            android:id="@+id/ti_calc_screen1_feet"
+            android:tag="ti_calc_screen1_feet"
+            />
+
+    </android.support.design.widget.TabLayout>
+
+    <!--LinerLayout so the next 2 EditText are on the same line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!--EditText for feet or meters
+        depending on chosen option-->
+        <EditText
+            android:id="@+id/et_calc_screen1_meters_feet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/meters"
+            android:inputType="number"
+            android:maxLines="1" />
+        <!--EditText for inches or centimeters
+        depending on chosen option-->
+        <EditText
+            android:id="@+id/et_calc_screen1_sm_inch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/centimeters"
+            android:inputType="number"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+    <!--TabLayout to choose pounds or kilograms depending-->
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tl_calc_screen1_lbs_kg"
+        >
+
+        <!--TabItem for kilograms-->
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kilograms"
+            android:id="@+id/ti_calc_screen1_kg"
+            android:tag="ti_calc_screen1_kg"
+            />
+
+        <!--TabItem for pounds-->
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pounds"
+            android:id="@+id/ti_calc_screen1_lbs"
+            android:tag="ti_calc_screen1_lbs"
+            />
+
+    </android.support.design.widget.TabLayout>
+
+    <!--EditText for kilograms or pounds-->
+    <EditText
+        android:id="@+id/et_calc_screen1_kg_lbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/kilograms"
+        android:inputType="numberDecimal"
+        android:maxLines="1" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:id="@+id/btn_calc_screen1_go_calc_screen2"
+        />
+
+</LinearLayout>

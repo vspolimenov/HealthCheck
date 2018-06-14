@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">HealthCalc</string>
+    <string name="feet">Feet</string>
+    <string name="inches">Inches</string>
+    <string name="meters">Meters</string>
+    <string name="centimeters">Centimeters</string>
+    <string name="age">Age</string>
+    <string name="years">Years</string>
+    <string name="sex">Sex</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="height">Height</string>
+    <string name="pounds">Pounds</string>
+    <string name="kilograms">Kilograms</string>
+    <string name="next">Next</string>
+    <string name="low">Low intensity activities and leisure activities (primarily sedentary)</string>
+    <string name="light">Light exercise (leisurely walking for 30-50 minutes 3-4 days/week, golfing, house chores)</string>
+    <string name="moderate">Moderate exercise (exercising 3-5 days per week at moderate for 30-60 minutes/session)</string>
+    <string name="active">active individuals (exercising 6-7 days/week at moderate to high intensity)</string>
+    <string name="extreme">extremely active individuals (engaged in heavy/intense exercise like heavy manual labor, heavy lifting,
+        endurance athletes, and competitive team sports athletes)</string>
+    <string name="calculate">Calculate daily calories</string>
+    <string name="go_to_foods">Go to foods list</string>
+    <string name="calories">Calories</string>
+    <string name="proteins">Proteins</string>
+    <string name="fats">Fats</string>
+    <string name="carbs">Carbs</string>
+    <string name="add">Add</string>
+    <string name="search">Search</string>
+    <string name="g">g</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_food_quantity">Add the amount of food</string>
+    <string name="in_grams">(in grams)</string>
+    <string name="enter_amount">Enter amount in grams</string>
+</resources>
